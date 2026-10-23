@@ -14,10 +14,11 @@ A running devlog: coding problems, class schedule, running to-dos, and short not
   ```
 - **`schedule/classes.md`** — current quarter's classes.
 - **`todos.md`** — running to-do list, kept intentionally generic. Personal, financial, and job-application admin (account IDs, visa/sponsorship status, fee holds, etc.) live elsewhere — not committed here, since this repo is public.
+- **`daily-challenge-log.md`** — auto-logged once a day via `scripts/fetch_daily_challenge.sh`, which pulls LeetCode's public "Daily Coding Challenge" (title/difficulty/link) for that date. Not necessarily solved — just a running record of what came up each day. Solved ones also get a full writeup in `problems/`.
 
 ## Commit automation
 
-A local script (`scripts/auto_commit.sh`) runs via `launchd` 2–3 times a day at staggered times. It checks for real changes in the working tree and commits + pushes only if something actually changed — no empty or padding commits. All commits are authored under my own name, not generated/attributed to any AI tool.
+A local `launchd` job runs once a day (staggered by a random 0–45 min delay so it's not the exact same minute every day). It first runs `scripts/fetch_daily_challenge.sh` to pull real content (today's LeetCode daily challenge), then `scripts/auto_commit.sh`, which checks for real changes in the working tree and commits + pushes only if something actually changed — no empty or padding commits. All commits are authored under my own name, not generated/attributed to any AI tool.
 
 ## Problems solved
 
