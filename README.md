@@ -1,25 +1,23 @@
 # Daily Coding Journal
 
-A running log of coding problems I solve, written up and solved in both **Python** and **JavaScript**. Started as a daily habit to stay sharp on data structures & algorithms while applying for internships.
+A running devlog: coding problems, class schedule, running to-dos, and short notes on AI/tech developments I want to keep up with. One place, updated most days, while I'm applying for internships.
 
-## How this works
+## Structure
 
-- Every problem lives in `problems/NNNN-problem-slug/` with:
-  - `README.md` — problem link, my approach, and time/space complexity
-  - `solution.py` — Python solution
-  - `solution.js` — JavaScript solution
-- New entries are scaffolded with `scripts/new_problem.sh` so adding today's problem is a one-liner (see below).
-- The table below is updated with every new entry — newest first.
+- **`problems/`** — coding problems I solve (LeetCode-style and otherwise), in Python and JavaScript. Scaffold a new one with:
+  ```bash
+  ./scripts/new_problem.sh <number> <slug> <difficulty>
+  ```
+- **`ai-notes/`** — short, self-written notes on a recent AI/tech development worth knowing about. Not every day — just when something's worth noting. Scaffold today's with:
+  ```bash
+  ./scripts/new_ai_note.sh
+  ```
+- **`schedule/classes.md`** — current quarter's classes.
+- **`todos.md`** — running to-do list, kept intentionally generic. Personal, financial, and job-application admin (account IDs, visa/sponsorship status, fee holds, etc.) live elsewhere — not committed here, since this repo is public.
 
-## Adding today's problem
+## Commit automation
 
-```bash
-./scripts/new_problem.sh <number> <slug> <difficulty>
-# example:
-./scripts/new_problem.sh 0003 longest-substring-without-repeating-characters Medium
-```
-
-This creates the folder with templated files and adds a row to the table below. Fill in the solution, write a couple sentences on your approach, commit.
+A local script (`scripts/auto_commit.sh`) runs via `launchd` 2–3 times a day at staggered times. It checks for real changes in the working tree and commits + pushes only if something actually changed — no empty or padding commits. All commits are authored under my own name, not generated/attributed to any AI tool.
 
 ## Problems solved
 
