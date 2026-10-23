@@ -8,3 +8,4 @@ Running list, kept generic on purpose — personal/financial/job-application adm
 - [ ] Meta Data Centers info session — Wed Oct 28, 3–4 PM PT (optional, register if interested)
 
 Check off items as they're done, add new ones as they come up. Keep entries academic/professional-dev only — no account numbers, financial details, or application-specific identifiers.
+
