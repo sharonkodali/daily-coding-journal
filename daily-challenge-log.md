@@ -10,3 +10,4 @@ actually written solutions for.
 | 2026-10-24 | 2409 | [Count Days Spent Together](https://leetcode.com/problems/count-days-spent-together/) | Easy |
 | 2026-10-25 | 1254 | [Number of Closed Islands](https://leetcode.com/problems/number-of-closed-islands/) | Medium |
 | 2026-10-26 | 3619 | [Count Islands With Total Value Divisible by K](https://leetcode.com/problems/count-islands-with-total-value-divisible-by-k/) | Medium |
+| 2026-10-27 | 3963 | [Create Grid With Exactly One Path](https://leetcode.com/problems/create-grid-with-exactly-one-path/) | Easy |
